@@ -1,0 +1,129 @@
+body{
+    min-width: 700px;
+}
+
+.logo img{
+    width: 300px;
+}
+
+header .menu{
+    background-color: black;
+    width: 96%;
+    height: 60px;
+}
+
+header .menu li{
+    float: left;
+    list-style: none;
+    line-height: 60px;
+    padding-right: 30px;
+    color: white;
+}
+
+.main{
+    clear: both;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 70px;
+    align-items: stretch;
+}
+
+.left{
+    border-right: 4px solid lightgray;
+    padding-right: 4px;
+    display: inline-block;
+    width: 68%;
+    margin-bottom: 40px;
+    vertical-align: top;
+}
+
+main .left img{
+    width: 100%;
+}
+
+main .left h1{
+    border-left: 5px solid black;
+    border-bottom: 2px solid black;
+}
+
+main .left h2{
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-left: 4px red solid;
+    background-color: #f1f1f1;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    width: 500px;
+    font-size: 20px;
+}
+
+main .left form{
+    margin: 0 auto;
+    background-color: #fbfbfb;
+    border: 3px #ebebeb solid;
+    border-radius: 10px;
+    width: 500px;
+}
+
+main .left form div{
+    padding: 15px;
+}
+
+
+main .left .text, textarea, .dropdown{
+    border: 1px solid #dfdfdf;
+    padding: 5px;
+    color: #999;
+    background: #fff
+}
+
+main .left .submit{
+    border: 1px solid lightgray;
+    padding: 4px 10px;
+    color: white;
+    background-color: #bfbfbf;
+    border-radius: 5px;
+    border-bottom: 2px solid gray;
+}
+
+main .left .kiji{
+    margin: 0 auto;
+    background-color: #fbfbfb;
+    border: 3px #ebebeb solid;
+    border-radius: 10px;
+    width: 500px;
+    padding: 15px;
+}
+
+main .left .kiji h3{
+
+}
+
+.right{
+    
+    display: inline-block;
+    width: 30%;
+    margin-bottom: 40px;
+    vertical-align: top;
+}
+
+main .right h2{
+    border-bottom: 2px solid gray;
+}
+
+main .right ul{
+    list-style: none;
+}
+
+footer{
+    clear: both;
+    width: 100%;
+    height: 60px;
+
+    color: white;
+    background-color: black;
+    text-align: center;
+    line-height: 60px;
+}

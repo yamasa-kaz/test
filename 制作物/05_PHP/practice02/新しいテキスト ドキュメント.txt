@@ -1,0 +1,1 @@
+http://localhost/php_practice/practice02/index.php

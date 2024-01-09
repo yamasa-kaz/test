@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>お問い合わせフォームを作る</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+<!--未記入チェックjavascript-->
+    <script type="text/javascript">
+        function check(){
+//記入漏れがあるとアラート表示して送信取り消し
+            if(form.name.value == "" || form.mail.value == "" || form.age.value == "" || form.comments.value == ""){
+                alert("未記入のフォームがあります");
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<style>
+h1{
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-left: 4px red solid;
+    background-color: #f1f1f1;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    width: 500px;
+    font-size: 20px;
+}
+</style>
+
+<body>
+
+<h1>お問い合わせフォーム</h1>
+
+<!--onsubmitでcheck関数呼び出し-->
+<form method="post" action="mail_confirm.php" name="form" onsubmit="return check()">
+    <div>
+        <label>名前</label><br>
+        <input type="text" class="text" size="35" name="name">
+    </div>
+
+    <div>
+        <label>メールアドレス</label><br>
+        <input type="text" class="text" size="35" name="mail">
+    </div>
+    
+    <div>
+        <label>年齢</label><br>
+        <select class="dropdown" name="age">
+            <option value="">選択してください</option>
+            <script>
+                for (var i = 18; i <= 65; i++){
+                    document.write("<option value = " + i + "> " + i + "歳</option>");
+                }
+            </script>
+        </select>
+    </div>
+
+    <div>
+        <label>コメント</label><br>
+        <textarea cols="35" rows="7" name="comments"></textarea>
+    </div>
+
+    <div>
+        <input type="submit" class="submit" value="送信する">
+    </div>
+</form>
+
+</body>
+
+</html>
