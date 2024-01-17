@@ -15,6 +15,8 @@ public class ListSample {
 		list.add("3");
 		list.add("4");
 		list.add("5");
+		list.add("6");
+		list.add(3, "warikomi");
 		
 		//値の取得
 		for(int i = 0; i < list.size(); i++) {
@@ -26,6 +28,9 @@ public class ListSample {
 		for(String s : list) {
 			System.out.println(s);
 		}
+		
+		System.out.println();
+		System.out.println(list.size());
 
 	}
 
